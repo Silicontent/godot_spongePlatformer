@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/WaterBar.gd" type="Script" id=1]
+[ext_resource path="res://assets/ui/water_bar/water_bar_under.png" type="Texture" id=2]
+[ext_resource path="res://assets/ui/water_bar/water_bar_over.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/water_bar/water_bar_progress.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/placeholder_pup_icon.png" type="Texture" id=5]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="WaterBar" type="TextureProgress" parent="."]
+margin_left = 130.0
+margin_top = 37.0
+margin_right = 620.0
+margin_bottom = 93.0
+step = 0.1
+value = 100.0
+texture_under = ExtResource( 2 )
+texture_over = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+
+[node name="PUP_Icon" type="TextureRect" parent="."]
+margin_left = 18.0
+margin_top = 16.0
+margin_right = 125.0
+margin_bottom = 173.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": "not implemented, start on this"
+}
+
+[node name="VariableLbl" type="Label" parent="."]
+margin_left = 1172.0
+margin_top = 661.0
+margin_right = 1212.0
+margin_bottom = 675.0
+text = "100.0"
+
+[node name="BarLbl" type="Label" parent="."]
+margin_left = 984.0
+margin_top = 661.0
+margin_right = 1024.0
+margin_bottom = 675.0
+text = "100.0"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 984.0
+margin_top = 681.0
+margin_right = 1262.0
+margin_bottom = 695.0
+text = "bar value                                 variable value"
