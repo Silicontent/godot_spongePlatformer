@@ -12,8 +12,8 @@ var end_level: Area2D
 # TODO: E 0:00:01.024   get_global_transform: Condition "!is_inside_tree()" is true. Returned: get_transform()
 func prepare_level(level):
 	var l = level.instance()
-	call_deferred("add_child", l)
-	
+	self.add_child(l)
+	 
 	player.global_position = l.get_node("PlayerStart").global_position
 
 
