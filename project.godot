@@ -11,12 +11,11 @@ config_version=4
 [application]
 
 config/name="Sponge Platformer"
-run/main_scene="res://scenes/level/Game.tscn"
+run/main_scene="res://scenes/Empty.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Global_player="*res://scripts/Sponge.gd"
 Global_game="*res://scenes/level/Game.tscn"
 
 [display]
